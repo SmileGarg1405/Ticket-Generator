@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a,choice,b,rate,c,d,e,rate1,rate2,rate3,i=0;
+	printf("\n where do you want to go?");
+	printf("\n choose the place \n 1 for bathinda \n 2 for patiala \n 3 for ludhiana \n 4 for chandigarh \n");
+	scanf("%d",&a);
+	choice=a;
+	switch(choice)
+	{
+		case 1:-
+		printf("\n how many tickets do you want?\n");
+		scanf("\n %d",&b);
+		printf("\n                                               P.R.T.C.          ");
+		printf("\n                                     %d tickets are to bathinda...",b);
+		rate=35*b;
+		printf(" \n                                  total fare is %d.....35 per ticket.",rate);
+		printf("\n\n                                        ~~~have a safe journey~~~");
+		break;
+		case 2:-
+		printf("\n how many tickets do you want?\n");
+		scanf("\n %d",&c);
+		printf("\n                                               P.R.T.C.          ");
+		printf("\n                                     %d tickets are to patiala...",c);
+		rate1=140*c;
+		printf(" \n                                 total fare is %d.....140 per ticket.",rate1);
+		printf("\n    \n                                       ~~~have a safe journey~~~");
+		break;
+		case 3:-
+		printf("\n how many tickets do you want?\n");
+		scanf("\n %d",&d);
+		printf("\n                                               P.R.T.C.          ");
+		printf("\n                                     %d tickets are to ludhiana...",d);
+		rate2=220*d;
+		printf("\n                                  total fare is %d.....220 per ticket.",rate2);
+		printf("\n \n                                        ~~~have a safe journey~~~");
+		break;
+		case 4:-
+		printf("\n how many tickets do you want?\n");
+		scanf("\n %d",&e);
+		printf("\n                                               P.R.T.C.          ");
+		printf("\n                                     %d tickets are to chandigarh...",e);
+		rate3=210*e;
+		printf(" \n                                 total fare is %d.....210 per ticket.",rate3);
+		printf("\n\n                                       ~~~have a safe journey~~~");
+		break;
+		default:
+		printf("\n                                      sorry your choice is wrong \n");
+		break;
+	}
+	getch();
+}
